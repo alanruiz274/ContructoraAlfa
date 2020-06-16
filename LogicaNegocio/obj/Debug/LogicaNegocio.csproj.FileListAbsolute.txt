@@ -1,0 +1,13 @@
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\LogicaNegocio.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\LogicaNegocio.pdb
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\AccesoDatos.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\Entidades.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\ConexionBD.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\MySql.Data.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\AccesoDatos.pdb
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\Entidades.pdb
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\ConexionBD.pdb
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio.csprojAssemblyReference.cache
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio.csproj.CopyComplete
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio.pdb

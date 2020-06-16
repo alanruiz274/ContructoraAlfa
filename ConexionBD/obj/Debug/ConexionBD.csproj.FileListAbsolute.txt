@@ -1,0 +1,7 @@
+C:\Users\Jaime\source\repos\AppContructora\ConexionBD\bin\Debug\ConexionBD.dll
+C:\Users\Jaime\source\repos\AppContructora\ConexionBD\bin\Debug\ConexionBD.pdb
+C:\Users\Jaime\source\repos\AppContructora\ConexionBD\bin\Debug\MySql.Data.dll
+C:\Users\Jaime\source\repos\AppContructora\ConexionBD\obj\Debug\ConexionBD.csprojAssemblyReference.cache
+C:\Users\Jaime\source\repos\AppContructora\ConexionBD\obj\Debug\ConexionBD.csproj.CopyComplete
+C:\Users\Jaime\source\repos\AppContructora\ConexionBD\obj\Debug\ConexionBD.dll
+C:\Users\Jaime\source\repos\AppContructora\ConexionBD\obj\Debug\ConexionBD.pdb
