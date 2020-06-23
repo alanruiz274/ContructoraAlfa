@@ -58,5 +58,23 @@ namespace AccesoDatos
             }
             return list;
         }
+        public List<Empleados> llenarCombo(string filtro)
+        {
+            var list = new List<Empleados>();
+            string consulta = string.Format("select IDEmpleado, CONCAT(Nombre, ' ', ApellidoPaterno, ' ', ApellidoMaterno) as Nombre from empleados where Nombre like '%{0}%' order by IDEmpleado desc", filtro);
+            var ds = conexion.ObtenerDatos(consulta, "empleados");
+            var dt = ds.Tables[0];
+
+            foreach (DataRow row in dt.Rows)
+            {
+                var empleados = new Empleados
+                {
+                    Ide = Convert.ToInt32(row["IDEmpleado"].ToString()),
+                    Nombre = row["Nombre"].ToString()
+                };
+                list.Add(empleados);
+            }
+            return list;
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace AccesoDatos
         public string Eliminar(dynamic accion)
         {
             material = accion;
-            var consulta = string.Format("delete from material WHERE IDProyecto='{0}'", material.Idm);
+            var consulta = string.Format("delete from material WHERE IDMaterial='{0}'", material.Idm);
             conexion.EjecutarConsulta(consulta);
             return "";
         }
@@ -56,8 +56,7 @@ namespace AccesoDatos
                     Nombre = row["Nombre"].ToString(),
                     Concepto = row["Concepto"].ToString(),
                     Cantidad = Convert.ToDouble(row["Cantidad"].ToString()),
-                    Costo = Convert.ToDouble(row["Costo"].ToString()),
-                    FKProyecto = Convert.ToInt32(row["FKProyecto"].ToString())
+                    Costo = Convert.ToDouble(row["Costo"].ToString())
                 };
                 list.Add(material);
             }

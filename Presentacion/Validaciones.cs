@@ -8,7 +8,7 @@ namespace Presentacion
         {
             if (Campo.Length > 0)
             {
-                var regex = new Regex(@"^[A-Za-z]+( [A-Za-z]+)*$");
+                var regex = new Regex(@"^[a-zA-Z0-9\s,]+( [A-Za-z]+)*$");
                 var match = regex.Match(Campo);
 
                 if (match.Success)

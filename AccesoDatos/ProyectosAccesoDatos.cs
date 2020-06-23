@@ -65,7 +65,7 @@ namespace AccesoDatos
         public List<Proyectos> MostarCombo(string filtro)//string filtro)
         {
             var list = new List<Proyectos>();
-            string consulta = string.Format("Select * from proyectos where Estado='En Proceso' and Descripcion like '%{0}%' order by IDProyecto desc", filtro);
+            string consulta = string.Format("select IDProyecto, CONCAT( Descripcion, ' - ', Direccion) as Descripcion FROM proyectos where Estado='En Proceso' and Descripcion like '%{0}%' order by IDProyecto desc", filtro);
             var ds = conexion.ObtenerDatos(consulta, "proyectos");
             var dt = ds.Tables[0];
 
@@ -74,13 +74,7 @@ namespace AccesoDatos
                 var proyectos = new Proyectos
                 {
                     Idp = Convert.ToInt32(row["IDProyecto"].ToString()),
-                    Descripcion = row["Descripcion"].ToString(),
-                    Direccion = row["Direccion"].ToString(),
-                    Estado = row["Estado"].ToString(),
-                    FechaInicio = row["FechaInicio"].ToString(),
-                    FechaFinalizado = row["FechaFinalizado"].ToString(),
-                    Latitud = row["Latitud"].ToString(),
-                    Longitud = row["Longitud"].ToString()
+                    Descripcion = row["Descripcion"].ToString()
                 };
                 list.Add(proyectos);
             }

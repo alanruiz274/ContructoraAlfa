@@ -23,9 +23,9 @@ C:\Users\Jaime\source\repos\AppContructora\Presentacion\obj\Debug\Presentacion.P
 C:\Users\Jaime\source\repos\AppContructora\Presentacion\obj\Debug\Presentacion.frmProyectos.resources
 C:\Users\Jaime\source\repos\AppContructora\Presentacion\bin\Debug\AjaxMin.dll
 C:\Users\Jaime\source\repos\AppContructora\Presentacion\bin\Debug\GMap.NET.Core.dll
-C:\Users\Jaime\source\repos\AppContructora\Presentacion\bin\Debug\Gmap.net.dll
 C:\Users\Jaime\source\repos\AppContructora\Presentacion\bin\Debug\GMap.NET.WindowsForms.dll
-C:\Users\Jaime\source\repos\AppContructora\Presentacion\bin\Debug\Gmap.net.pdb
 C:\Users\Jaime\source\repos\AppContructora\Presentacion\obj\Debug\Presentacion.frmMapa.resources
 C:\Users\Jaime\source\repos\AppContructora\Presentacion\obj\Debug\Presentacion.frmEmpleados.resources
 C:\Users\Jaime\source\repos\AppContructora\Presentacion\obj\Debug\Presentacion.frmMaterial.resources
+C:\Users\Jaime\source\repos\AppContructora\Presentacion\obj\Debug\Presentacion.FrmAvances.resources
+C:\Users\Jaime\source\repos\AppContructora\Presentacion\obj\Debug\Presentacion.FrmReportes.resources

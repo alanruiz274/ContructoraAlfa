@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using Entidades;
 using LogicaNegocio;
@@ -25,6 +26,8 @@ namespace Presentacion
         {
             BuscarMaterial("");
             llenarProyectos("");
+            dtpFecha.Format = DateTimePickerFormat.Custom;
+            dtpFecha.CustomFormat = "yyyy-MM-dd";
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -91,7 +94,7 @@ namespace Presentacion
         private void BindingSelectMaterial()
         {
             //pasamos los datos de la celda de data grid alas entidades
-            material.Idm = Convert.ToInt32(dtgProyectos.CurrentRow.Cells["Idp"].Value.ToString());
+            material.Idm = Convert.ToInt32(dtgProyectos.CurrentRow.Cells["Idm"].Value.ToString());
             material.Proyecto = dtgProyectos.CurrentRow.Cells["Proyecto"].Value.ToString();
             material.Fecha = dtgProyectos.CurrentRow.Cells["Fecha"].Value.ToString();
             material.Nombre = dtgProyectos.CurrentRow.Cells["Nombre"].Value.ToString();
@@ -114,7 +117,7 @@ namespace Presentacion
         private void Eliminar()
         {
             //seleccionamos el ID que vamos a eliminar
-            material.Idm = Convert.ToInt32(dtgProyectos.CurrentRow.Cells["Idp"].Value);
+            material.Idm = Convert.ToInt32(dtgProyectos.CurrentRow.Cells["Idm"].Value);
             materialManejador.Eliminar(material);
         }
         private void Guardar()

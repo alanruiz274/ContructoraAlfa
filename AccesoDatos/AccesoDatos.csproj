@@ -48,6 +48,7 @@
     <Compile Include="MaterialAccesoDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProyectosAccesoDatos.cs" />
+    <Compile Include="ReportesAccesoDatos.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConexionBD\ConexionBD.csproj">

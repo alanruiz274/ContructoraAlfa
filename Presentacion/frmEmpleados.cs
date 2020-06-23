@@ -8,21 +8,21 @@ namespace Presentacion
     public partial class frmEmpleados : Form
     {
         public Validaciones validar;
-        private EmpleadoManejador empleadoManejador;
+        private EmpleadoManejador empleadosManejador;
         private Empleados empleados;
         int idEmpleado;
         public frmEmpleados()
         {
             InitializeComponent();
             empleados = new Empleados();
-            empleadoManejador = new EmpleadoManejador();
+            empleadosManejador = new EmpleadoManejador();
             validar = new Validaciones();
             BindingEmpleados();
             
         }
         private void frmProyectos_Load(object sender, EventArgs e)
         {
-            BuscarProyectos("");
+            BuscarEmpleados("");
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -30,20 +30,20 @@ namespace Presentacion
             {
                 BindingEmpleados();
                 Guardar();
-                BuscarProyectos("");
+                BuscarEmpleados("");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR", ex.Message);
             }
         }
-        private void BuscarProyectos(String filtro)
+        private void BuscarEmpleados(String filtro)
         {
-            dtgEmpleados.DataSource = empleadoManejador.ObtenerProyectos(filtro);
+            dtgEmpleados.DataSource = empleadosManejador.ObtenerEmpleados(filtro);
         }
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            BuscarProyectos(txtBuscar.Text);
+            BuscarEmpleados(txtBuscar.Text);
         }
         private void dtgProyectos_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -63,7 +63,7 @@ namespace Presentacion
                 try
                 {
                     Eliminar();
-                    BuscarProyectos("");
+                    BuscarEmpleados("");
                 }
                 catch (Exception ex)
                 {
@@ -109,8 +109,8 @@ namespace Presentacion
         private void Eliminar()
         {
             //seleccionamos el ID que vamos a eliminar
-            empleados.Ide = Convert.ToInt32(dtgEmpleados.CurrentRow.Cells["Idp"].Value);
-            empleadoManejador.Eliminar(empleados);
+            empleados.Ide = Convert.ToInt32(dtgEmpleados.CurrentRow.Cells["Ide"].Value);
+            empleadosManejador.Eliminar(empleados);
         }
         private void Guardar()
         {
@@ -120,12 +120,12 @@ namespace Presentacion
                 //despues validamos si contien ID para saber si va a modificar o guardar
                 if (idEmpleado > 0)
                 {
-                    empleadoManejador.Modificar(empleados);
+                    empleadosManejador.Modificar(empleados);
                     Limpiar();
                 }
                 else
                 {
-                    empleadoManejador.Guardar(empleados);
+                    empleadosManejador.Guardar(empleados);
                     Limpiar();
                 }
             }

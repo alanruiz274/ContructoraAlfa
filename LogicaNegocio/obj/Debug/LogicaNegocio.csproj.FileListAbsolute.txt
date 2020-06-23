@@ -11,3 +11,7 @@ C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio
 C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio.csproj.CopyComplete
 C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio.dll
 C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio.pdb
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\AjaxMin.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\GMap.NET.Core.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Jaime\source\repos\AppContructora\LogicaNegocio\obj\Debug\LogicaNegocio.csproj.ResolveComReference.cache

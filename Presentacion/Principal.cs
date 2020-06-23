@@ -85,7 +85,20 @@ namespace Presentacion
             AbrirForm(new frmMaterial());
         }
 
-        
+        private void logo_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnAvances_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new FrmAvances());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new FrmReportes());
+        }
+
         private void btnProyectos_Click(object sender, EventArgs e)
         {
             AbrirForm(new frmProyectos());

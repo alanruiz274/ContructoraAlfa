@@ -24,10 +24,16 @@ namespace LogicaNegocio
         {
             empleadosAccesoDatos.Modificar(empleados);
         }
-        public List<Empleados> ObtenerProyectos(string filtro)
+        public List<Empleados> ObtenerEmpleados(string filtro)
         {
             var list = new List<Empleados>();
             list = empleadosAccesoDatos.Mostar(filtro);
+            return list;
+        }
+        public List<Empleados> llenarCombo(string filtro)
+        {
+            var list = new List<Empleados>();
+            list = empleadosAccesoDatos.llenarCombo(filtro);
             return list;
         }
     }

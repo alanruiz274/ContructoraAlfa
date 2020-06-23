@@ -23,6 +23,10 @@ namespace Presentacion
         private void frmProyectos_Load(object sender, EventArgs e)
         {
             BuscarProyectos("");
+            dtpFInicio.Format = DateTimePickerFormat.Custom;
+            dtpFInicio.CustomFormat = "yyyy-MM-dd";
+            dtpFFin.Format = DateTimePickerFormat.Custom;
+            dtpFFin.CustomFormat = "yyyy-MM-dd";
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {

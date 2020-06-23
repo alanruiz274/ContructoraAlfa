@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RAvances.cs" />
+    <Compile Include="RPMaterial.cs" />
     <Compile Include="Avances.cs" />
     <Compile Include="Empleados.cs" />
     <Compile Include="Login.cs" />

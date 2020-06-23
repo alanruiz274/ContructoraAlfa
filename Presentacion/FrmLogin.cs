@@ -10,15 +10,17 @@ namespace Presentacion
 {
     public partial class FrmLogin : Form
     {
-        LoginManejador _loginLogicaNegocio;
-        Login _loginEntidades;
-
+        LoginManejador loginLogicaNegocio;
+        Login login;
+        Validaciones validaciones;
+        int intento=0;
         List<Login> lista = new List<Login>();
         public FrmLogin()
         {
             InitializeComponent();
-            _loginEntidades = new Login();
-            _loginLogicaNegocio = new LoginManejador();
+            login = new Login();
+            validaciones = new Validaciones();
+            loginLogicaNegocio = new LoginManejador();
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleseCapture();
@@ -100,19 +102,30 @@ namespace Presentacion
         {
             try
             {
-                lista = _loginLogicaNegocio.ObtenerLista(txtUser.Text, txtPassword.Text);
-                if (_loginLogicaNegocio.UsuarioValido(txtUser.Text))
+                lista = loginLogicaNegocio.ObtenerLista(txtUser.Text, txtPassword.Text);
+                if (validaciones.Letras(txtUser.Text) && validaciones.Letras(txtPassword.Text))
                 {
                     if (txtUser.Text == lista[0].User && txtPassword.Text == lista[0].Password)
                     {
                         Principal principal = new Principal(Convert.ToInt32(lista[0].Id), lista[0].User, lista[0].Password, Convert.ToInt32(lista[0].Nivel));
                         this.Hide();
                         principal.ShowDialog();
-
+                    }
+                    else if (intento == 4)
+                        this.Close();
+                    else
+                    {
+                        intento++;
+                        MessageBox.Show("Datos Incorrectos");
                     }
                 }
+                else if(intento == 4)
+                    this.Close();
                 else
+                {
+                    intento++;
                     MessageBox.Show("Datos Incorrectos");
+                }
             }
             catch (Exception) 
             {
