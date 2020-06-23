@@ -16,8 +16,8 @@ namespace Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal(1, "", "", 1));
-            //Application.Run(new FrmLogin());
+            //Application.Run(new Principal(1, "", "", 1));
+            Application.Run(new FrmLogin());
         }
     }
 }

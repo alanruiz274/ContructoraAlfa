@@ -13,7 +13,7 @@ namespace Presentacion
         LoginManejador loginLogicaNegocio;
         Login login;
         Validaciones validaciones;
-        int intento=0;
+        int intento;
         List<Login> lista = new List<Login>();
         public FrmLogin()
         {
@@ -119,7 +119,7 @@ namespace Presentacion
                         MessageBox.Show("Datos Incorrectos");
                     }
                 }
-                else if(intento == 4)
+                else if(intento > 3)
                     this.Close();
                 else
                 {
